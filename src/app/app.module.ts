@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatCheckboxModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatRippleModule } from '@angular/material';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { MatCheckboxModule, MatButtonModule, MatFormFieldModule, MatInputModule,
     MatFormFieldModule,
     MatInputModule,
     MatRippleModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
