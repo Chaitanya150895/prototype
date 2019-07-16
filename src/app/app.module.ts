@@ -5,14 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatCheckboxModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatRippleModule } from '@angular/material';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AutocompleteSimpleExampleComponent } from './autocomplete-simple-example/autocomplete-simple-example.component';
 import { MatAutocompleteModule } from '@angular/material';
+import { AutocompletePlainInputExampleComponent } from './autocomplete-plain-input-example/autocomplete-plain-input-example.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AutocompleteSimpleExampleComponent
+    AutocompleteSimpleExampleComponent,
+    AutocompletePlainInputExampleComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,8 @@ import { MatAutocompleteModule } from '@angular/material';
     MatInputModule,
     MatRippleModule,
     MatAutocompleteModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
