@@ -9,12 +9,14 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AutocompleteSimpleExampleComponent } from './autocomplete-simple-example/autocomplete-simple-example.component';
 import { MatAutocompleteModule } from '@angular/material';
 import { AutocompletePlainInputExampleComponent } from './autocomplete-plain-input-example/autocomplete-plain-input-example.component';
+import { AutocompleteOptgroupExampleComponent } from './autocomplete-optgroup-example/autocomplete-optgroup-example.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AutocompleteSimpleExampleComponent,
-    AutocompletePlainInputExampleComponent
+    AutocompletePlainInputExampleComponent,
+    AutocompleteOptgroupExampleComponent
   ],
   imports: [
     BrowserModule,
