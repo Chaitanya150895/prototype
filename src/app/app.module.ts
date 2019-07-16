@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatCheckboxModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatRippleModule } from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { AutocompleteSimpleExampleComponent } from './autocomplete-simple-example/autocomplete-simple-example.component';
+import { MatAutocompleteModule } from '@angular/material';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AutocompleteSimpleExampleComponent
   ],
   imports: [
     BrowserModule,
@@ -21,6 +23,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatInputModule,
     MatRippleModule,
+    MatAutocompleteModule,
     ReactiveFormsModule
   ],
   providers: [],
