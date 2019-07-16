@@ -1,7 +1,16 @@
 <mat-form-field>
-  <input type="text" placeholder = "Pick" matInput [formControl]="myControl" [matAutocomplete]="auto">
+  <input type="text" placeholder = "Assignee" matInput [formControl]="myControl" [matAutocomplete]="auto">
 </mat-form-field>
 
 <mat-autocomplete #auto="matAutocomplete">
   <mat-option *ngFor="let option of options" [value]="option">{{option}}</mat-option>
 </mat-autocomplete>
+
+<!-- as you can take values from a fuction at .ts file of the component and simply call it in your html file as below:
+myControl = new FormControl();
+  options: string[] = ['Mary', 'Shally', 'Igor'];
+
+  and can call it in the html  
+  <mat-option *ngFor="let option of options" [value]="option">{{option}}</mat-option>
+
+  here option is local variable of the function optoins. which we have to give in the [value] nad finally it'll print the same  using interpolation {{option}}  -->
