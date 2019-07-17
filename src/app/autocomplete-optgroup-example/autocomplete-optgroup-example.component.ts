@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormGroup} from '@angular/forms';
+import {FormBuilder, FormGroup, FormControl} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {startWith, map} from 'rxjs/operators';
 
@@ -31,6 +31,7 @@ export const _filter = (opt: string[], value: string): string[] => {
 })
 
 export class AutocompleteOptgroupExampleComponent implements OnInit {
+  stateCtrl = new FormControl();
   stateForm: FormGroup = this.fb.group({
     stateGroup: '',
   });

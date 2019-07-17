@@ -1,6 +1,6 @@
 <form [formGroup]="stateForm">
   <div class="row">
-    <div class="col-sm-6 col-md-6 col-lg-6">
+    <div class="col-sm">
       <mat-form-field>
         <input type="text" matInput placeholder="States Group" formControlName="stateGroup" required
           [matAutocomplete]="autoGroup">
@@ -13,7 +13,7 @@
         </mat-autocomplete>
       </mat-form-field>
     </div>
-    <div class="col-sm-6 col-md-6 col-lg-6">
+    <div class="col-sm">
       <mat-slide-toggle [checked]="stateCtrl.disabled"
         (change)="stateCtrl.disabled ? stateCtrl.enable() : stateCtrl.disable()">
         Disable Input?
