@@ -3,6 +3,13 @@ import {FormBuilder, FormGroup} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {startWith, map} from 'rxjs/operators';
 
+
+export interface State {
+  flag: string;
+  name: string;
+  population: string;
+}
+
 export interface StateGroup {
   letter: string;
   names: string[];

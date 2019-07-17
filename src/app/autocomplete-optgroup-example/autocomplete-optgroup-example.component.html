@@ -1,13 +1,25 @@
 <form [formGroup]="stateForm">
-  <mat-form-field>
-    <input type="text" matInput placeholder="States Group" formControlName="stateGroup" required [matAutocomplete]="autoGroup">
-      <mat-autocomplete #autoGroup="matAutocomplete">
-        <mat-optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.letter">
-          <mat-option *ngFor="let name of group.names" [value]="name">
-            {{name}}
-          </mat-option>
-      </mat-optgroup>
-    </mat-autocomplete>
-  </mat-form-field>
+  <div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6">
+      <mat-form-field>
+        <input type="text" matInput placeholder="States Group" formControlName="stateGroup" required
+          [matAutocomplete]="autoGroup">
+        <mat-autocomplete #autoGroup="matAutocomplete">
+          <mat-optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.letter">
+            <mat-option *ngFor="let name of group.names" [value]="name">
+              {{name}}
+            </mat-option>
+          </mat-optgroup>
+        </mat-autocomplete>
+      </mat-form-field>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6">
+      <mat-slide-toggle [checked]="stateCtrl.disabled"
+        (change)="stateCtrl.disabled ? stateCtrl.enable() : stateCtrl.disable()">
+        Disable Input?
+      </mat-slide-toggle>
+    </div>
+  </div>
 </form>
-
+<br>
+<mat-checkbox>Check me!</mat-checkbox>
