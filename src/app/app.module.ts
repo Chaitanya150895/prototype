@@ -51,6 +51,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
+import { MenuOverviewExampleComponent } from './menu-overview-example/menu-overview-example.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import {MatTreeModule} from '@angular/material/tree';
     AutocompletePlainInputExampleComponent,
     AutocompleteOptgroupExampleComponent,
     CheckboxConfigurableExampleComponent,
+    MenuOverviewExampleComponent,
   ],
   imports: [
     BrowserModule,
@@ -73,7 +75,8 @@ import {MatTreeModule} from '@angular/material/tree';
     ReactiveFormsModule,
     MatSlideToggleModule,
     FormsModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent],
